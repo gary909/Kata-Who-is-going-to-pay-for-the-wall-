@@ -1,5 +1,10 @@
 function whoIsPaying(name){
-    //your code here
+    let myArr = [];
+    if(name.length > 2){
+        myArr.push(name)
+    }
+    myArr.push(name.substring(0, 2))
+    return myArr;
 }
 
 console.log(whoIsPaying("Mexico")); // ["Mexico", "Me"]
